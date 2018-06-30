@@ -5,6 +5,7 @@ import './App.css';
 import Home from "./components/Home"
 import Login from "./components/Login"
 import ViewVolunteers from "./components/ViewVolunteers"
+import CreateEvent from "./components/CreateEvent"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Route exact path="/" component={Home} />
 			<Route exact path="/login" component={Login} />
 			<Route exact path="/volunteers" component={ViewVolunteers} />
+			<Route exact path="/createevent" component={CreateEvent} />
 		</Switch>
 	</Router>
   );
