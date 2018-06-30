@@ -3,15 +3,18 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 
 import Home from "./components/Home"
+import Login from "./components/Login"
+import ViewVolunteers from "./components/ViewVolunteers"
 
 const App = () => {
   return (
-    <div>
-    	<Router>
-    		<Route exact path="/" component={Home} />
-    		<Route exact path="/login" component={login} />
-    	</Router>
-    </div>
+	<Router>
+		<Switch>
+			<Route exact path="/" component={Home} />
+			<Route exact path="/login" component={Login} />
+			<Route exact path="/volunteers" component={ViewVolunteers} />
+		</Switch>
+	</Router>
   );
 };
 export default App;
